@@ -33,6 +33,16 @@ urlpatterns = [
     path("api/v1/", include("event.api.v1.urls")),
     path("event/", include("event.urls")),
     path("home/", include("home.urls")),
+    path("api/v1/", include("taxi_profile.api.v1.urls")),
+    path("taxi_profile/", include("taxi_profile.urls")),
+    path("api/v1/", include("booking.api.v1.urls")),
+    path("booking/", include("booking.urls")),
+    path("api/v1/", include("location.api.v1.urls")),
+    path("location/", include("location.urls")),
+    path("api/v1/", include("vehicle.api.v1.urls")),
+    path("vehicle/", include("vehicle.urls")),
+    path("api/v1/", include("wallet.api.v1.urls")),
+    path("wallet/", include("wallet.urls")),
 ]
 
 admin.site.site_header = "mobile 27"
